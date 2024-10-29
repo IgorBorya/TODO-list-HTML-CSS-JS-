@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --dark-primary: #999999;
+  --accent: #ff6600;
+  font-family: Inter;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+:is(input, textarea) {
+  border: 1px solid var(--dark-primary);
+  border-radius: 4px;
+  min-height: 32px;
+  line-height: 24px;
+  padding: 3px 4px;
+  font-family: inherit;
+  width: 100%;
+}
+
+:is(label, .tag) {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+:checked + label {
+  color: var(--accent);
+}
+
+.tag {
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  display: inline-block;
+  border-radius: 2px;
+  padding: 2px 3px;
+}
