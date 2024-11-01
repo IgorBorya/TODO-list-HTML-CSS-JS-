@@ -30,7 +30,7 @@
 
     <ul id="todo-list"></ul>
     <hr>
-    <form id="edit-form">
+    <form id="edit-form" data-mode="create" data-editId="">
         <div class="form-control">
             <label>Категорія</label>
             <div class="categories">
@@ -46,7 +46,7 @@
         </div>
         <div class="form-control">
             <label>Опис</label>
-            <textarea rows="4" name="desk"></textarea>
+            <textarea rows="4" name="desc"></textarea>
         </div>
         <div class="form-actions">
             <button class="secondary">
@@ -70,12 +70,12 @@
                 <p class="tag">фітнес</p>
             </div>
             <div class="actions">
-                <button class="icon-btn">
+                <button class="icon-btn" data-action="edit">
                     <svg width="20" height="20">
                         <use href="icons.svg#edit"></use>
                     </svg>
                 </button>
-                <button class="icon-btn">
+                <button class="icon-btn" data-action="delete">
                     <svg width="20" height="20">
                         <use href="icons.svg#delete"></use>
                     </svg>
@@ -83,8 +83,8 @@
             </div>
             <div class="content">
                 <h2 class="title">Title</h2>
-                <p class="description">Description</p>
-                <button class="primary">
+                <p class="desc">Description</p>
+                <button class="primary" data-action="complete">
                     <svg width="20" height="20">
                         <use href="icons.svg#check"></use>
                     </svg>
