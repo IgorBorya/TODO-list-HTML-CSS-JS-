@@ -50,8 +50,9 @@ label {
 
 
 
-[type=checkbox]+label {
+[type=radio]+label {
   font-size: 10px;
+  text-transform: uppercase;
 }
 :checked + label {
   color: var(--accent);
